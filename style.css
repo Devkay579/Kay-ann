@@ -1,0 +1,84 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #ffe4e1, #ffcccc);
+  color: #333;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #e6005c;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.photos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  /* animation: fadeIn 5s ease-in; */
+}
+
+.photos img, .photos video {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+.message h2 {
+  margin-bottom: 1rem;
+  color: #cc0052;
+}
+
+.message p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 480px) {
+ 
+  .photos {
+    flex-direction: column;
+    
+    align-items: center;
+  }
+}
